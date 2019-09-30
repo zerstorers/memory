@@ -1,0 +1,15 @@
+
+div {
+    width: 400px;
+    margin: auto;
+}
+
+table td{
+    border: 1px solid black;
+    padding: 3.3em;
+    margin-left: 10em;
+}
+
+.hidden {
+    background-color: black;
+}
