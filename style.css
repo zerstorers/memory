@@ -13,3 +13,10 @@ table td{
 .hidden {
     background-color: black;
 }
+
+#cpt {
+    width: 20px;
+    padding: 0.2em;
+    background-color: black;
+    color: white;
+}

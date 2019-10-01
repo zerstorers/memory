@@ -4,6 +4,7 @@ document.body.appendChild(table)
 var UserLine = document.getElementById("Userline")
 var UserCol = document.getElementById("UserCol")
 var btn = document.getElementById("button")
+var cpt = document.getElementById("cpt")
 var click1 = null;
 var click2 = null;
 
@@ -11,12 +12,15 @@ var click2 = null;
 
 btn.addEventListener("click", function () {
     table.innerHTML = ""
+    cpt.innerHTML = 0
 
     var col = UserCol.value
     var line = UserLine.value
 
     var nb = col * line
     numbers = []
+
+    
 
     for (let i = 1; i <= nb / 2; i++) {
         numbers.push(i)
@@ -61,6 +65,10 @@ btn.addEventListener("click", function () {
                 if (click1.innerHTML == click2.innerHTML){
                     click1.style.backgroundColor = "green"
                     click2.style.backgroundColor = "green"
+                    cpt.innerHTML = parseInt(cpt.innerHTML) + 1
+                    click1 = null
+                    click2 = null
+
                 }
                    
 
